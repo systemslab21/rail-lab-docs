@@ -43,7 +43,7 @@ For each new sensor reading, exactly one position telegram must be sent to the l
 - NID_ENGINE (string)
   - The NID_ENGINE of the active ETCS On Board equipment of the test train (if applicable)
 
-### Protobuf Schema
+*Protobuf Schema*
 
 ```proto
 syntax = "proto3";
@@ -55,7 +55,7 @@ message VehicleAttributes {
 }
 ```
 
-### Protobuf Message: Position Telegram
+## Protobuf Message: Position Telegram
 
 - Timestamp
   - The absolute timestamp of the sensor reading, in milliseconds since 1970-01-01
@@ -81,7 +81,7 @@ message VehicleAttributes {
   - Can be changed without resetting the distance
   - Should be reset when the reference value of the sensor is reset
 
-### Protobuf Schema
+*Protobuf Schema*
 
 ```proto
 syntax = "proto3";
