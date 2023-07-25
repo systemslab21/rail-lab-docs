@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package esc;
+
+message VehicleAttributes {
+    string nid_engine = 1;
+}

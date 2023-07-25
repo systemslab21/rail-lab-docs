@@ -1,0 +1,4 @@
+timestamp : 1235
+position : 24
+speed : 42.0
+reset_id: "asdf"

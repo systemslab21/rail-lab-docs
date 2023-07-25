@@ -1,0 +1,6 @@
+#! /bin/bash
+
+COAP_HOST=localhost
+cat data.txt \
+    | protoc --encode=esc.VehiclePosition ./vehicle_position.proto \
+    | coap-client-openssl -c cert.pem -j key.pem -m POST -N -f - coaps://$COAP_HOST:5684/api/v1/telemetry

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package esc;
+
+message VehiclePosition {
+    // in ms, number of milliseconds elapsed since the 01/01/1970
+    uint64 timestamp = 1;
+    // in cm, current position of the train
+    uint64 position = 2;
+    // in m/s, current speed of the train
+    double speed = 3;
+    // opaque reset id
+    string reset_id = 4;
+}
