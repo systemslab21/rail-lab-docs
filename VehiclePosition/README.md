@@ -76,8 +76,9 @@ message VehicleAttributes {
 - Speed
   - The current speed of the vehicle in m/s.
   - This value can be used by the lab to interpolate and predict the current location of the train.
-- Reset ID
-  - Opaque identifier string that does not change unless a train-side reset was performed
+- Session ID
+  - Opaque identifier string that can be freely chosen
+  - Remains constant unless a train-side reset was performed
   - Can be changed without resetting the distance
   - Should be reset when the reference value of the sensor is reset
 
@@ -96,6 +97,6 @@ message VehiclePosition {
     // in m/s, current speed of the train
     double speed = 3;
     // opaque reset id
-    string reset_id = 4;
+    string session_id = 4;
 }
 ```
