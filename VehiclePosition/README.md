@@ -96,7 +96,7 @@ message VehiclePosition {
     int64 position = 2;
     // in m/s, current speed of the train
     double speed = 3;
-    // opaque reset id
+    // opaque session id
     string session_id = 4;
 }
 ```
